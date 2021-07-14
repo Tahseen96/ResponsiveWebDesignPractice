@@ -1,0 +1,130 @@
+body{
+    font-family: "Roboto" , sans-serif;
+    font-size: 400;
+    background-color: #EBEBEB;
+    color: white;
+    
+}
+
+main {
+    max-width: 1024px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 135px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMenu{
+    display: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin-left: 25px;
+}
+
+.dropdown {
+    margin-right: 25px;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.Header {
+    background-color: #484848;
+    min-height: 95px;
+    margin-bottom: 40px;
+    width: 100%;
+    position: fixed;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+header {
+    min-height: 95px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.Box {
+    background-color: #00F490;
+    width: 30%;
+    min-height: 200px;
+    margin-bottom: 40px;
+}
+
+.Box img {
+    width: 100%;
+    height: auto;
+}
+
+.Box p {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 20px;
+    font-size: 0.875rem;
+}
+
+.Box p::first-line{
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .Box {
+        width: 47%;
+    }
+
+    nav a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-width: 0;
+        margin-right: 0px;
+        display: block; 
+    }
+
+    nav {
+        margin-top: 30px;
+        align-items: center;
+        background-color: darkorange;
+        position: absolute;
+        padding: 20px;
+        margin-left: -100px;
+    }
+
+    .dropdown nav{
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .navMenu {
+        display: block;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .Box {
+        width: 100%;
+    }
+}
